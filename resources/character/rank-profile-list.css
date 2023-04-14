@@ -8,7 +8,7 @@ body {
   width: 820px;
 }
 .container {
-  width: 820px;
+  width: 920px;
   padding: 0;
   background-size: cover;
   overflow: hidden;
@@ -125,7 +125,7 @@ body {
   line-height: 20px;
 }
 .char-name {
-  width: 100px;
+  width: 200px;
 }
 .char-talent {
   display: flex;

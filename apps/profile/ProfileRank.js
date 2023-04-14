@@ -204,6 +204,14 @@ async function renderCharRankList ({ e, uids, char, mode, groupId }) {
         if (userInfo && userInfo.qq) {
           let member = e.group?.pickMember(userInfo.qq)
           let img = member?.getAvatarUrl(140)
+          let qinfo = member.info
+          let qname = '旅行者'
+          if (qinfo?.card && qinfo?.card.length>0) {
+            qname = qinfo.card.substr(0, 5)
+          } else if (qinfo?.nickname && qinfo?.nickname.length>0) {
+            qname = qinfo.nickname.substr(0, 5)
+          } 
+          tmp.qName = qname
           if (img) {
             tmp.qqFace = img
           }
